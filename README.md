@@ -25,20 +25,32 @@ When the pipeline runs, it provides an immediate console report and updates the 
 **Console Report:**
 ```text
 Starting data collection for 5 cities...
-Fetching London... ✅ Done.
-Fetching New York... ✅ Done.
-Fetching Tokyo... ✅ Done.
-Fetching Sydney... ✅ Done.
-Fetching Paris... ✅ Done.
 
-Weather Fetch Summary - 2023-10-27
-----------------------------------
-Cities Queried: 5
-Hottest City:   Sydney (28.4°C)
-Coldest City:   London (12.1°C)
-Average Humidity: 65.4%
-----------------------------------
+Connecting to London....✅ Done.
+Connecting to Chicago....✅ Done.
+Connecting to Pretoria....✅ Done.
+Connecting to Johannesburg....✅ Done.
+Connecting to Tokyo....✅ Done.
+
+--- COLLECTION COMPLETE ---
+Successfully collected: 5 records.
+Preview of first record: {'city': 'London', 'temp': 6.17, 'humidity': 83, 'description': 'clear sky', 'timestamp': datetime.datetime(2025, 12, 27, 12, 55, 4)}
+
+---THE RAW TABLE---
+           city   temp  humidity      description           timestamp
+0        London   6.17        83        clear sky 2025-12-27 12:55:04
+1       Chicago   3.74        90  overcast clouds 2025-12-27 12:51:59
+2      Pretoria  26.06        61       few clouds 2025-12-27 12:51:31
+3  Johannesburg  25.90        70       few clouds 2025-12-27 12:51:36
+4         Tokyo   4.63        57       few clouds 2025-12-27 12:50:21
+
 ✅ Data appended to weather_log.csv
+
+---ANALYSIS REPORT---
+Cities Queried: 5
+Average Humididty: 72.2%
+Hottest City: Pretoria (26.06°C)
+Coldest City: Chicago (3.74°C)
 ```
 ## ⚙️ How to Run
 1.  **Clone the repository:**
