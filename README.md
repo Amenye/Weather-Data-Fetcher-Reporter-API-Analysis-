@@ -39,3 +39,26 @@ Coldest City:   London (12.1°C)
 Average Humidity: 65.4%
 ----------------------------------
 ✅ Data appended to weather_log.csv
+```
+## ⚙️ How to Run
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/weather-etl-pipeline.git](https://github.com/YOUR_USERNAME/weather-etl-pipeline.git)
+    ```
+2.  **Install dependencies:**
+    ```bash
+    pip install pandas requests
+    ```
+3.  **Configure API Key:**
+    * Open `weather_etl_pipeline.py`
+    * Replace `"YOUR_API_KEY"` with your valid OpenWeatherMap key.
+    *(Note: For production environments, use environment variables).*
+4.  **Execute the script:**
+    ```bash
+    python weather_etl_pipeline.py
+    ```
+
+## 📈 Future Improvements
+* **Visualization:** Integrate `Matplotlib` to generate trend lines for temperature changes over the last 7 days.
+* **Automation:** Set up a cron job (Linux) or Task Scheduler (Windows) to run the script automatically every 24 hours.
+* **Cloud Storage:** Upgrade the "Load" phase to save data to an AWS S3 bucket or a SQL database instead of a local CSV.
