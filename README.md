@@ -63,7 +63,7 @@ Coldest City: Chicago (3.74°C)
     ```
 3.  **Configure API Key:**
     * Open `weather_etl_pipeline.py`
-    * Replace `"YOUR_API_KEY"` with your valid OpenWeatherMap key.
+    * Replace `"INSERT_YOUR_API_KEY_HERE"` with your valid OpenWeatherMap key.
     *(Note: For production environments, use environment variables).*
 4.  **Execute the script:**
     ```bash
