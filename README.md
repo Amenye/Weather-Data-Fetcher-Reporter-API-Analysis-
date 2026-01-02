@@ -55,7 +55,7 @@ Coldest City: Chicago (3.74°C)
 ## ⚙️ How to Run
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/weather-etl-pipeline.git](https://github.com/YOUR_USERNAME/weather-etl-pipeline.git)
+    git clone [https://github.com/YOUR_USERNAME/weather-etl-pipeline.git](https://github.com/Amenye/weather-etl-pipeline.git)
     ```
 2.  **Install dependencies:**
     ```bash
